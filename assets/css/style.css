@@ -1,0 +1,110 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, #6ab7f5,  #fff);
+    min-height: 100vh; /*transforma o body para o tamanho total da tela*/
+}
+
+main{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+.pokedex{
+    width: 100%; /*deixa a imagem do tamanho da tela*/
+    max-width: 425px;
+}
+.pokemonimg{
+    position: absolute; /*permite sobrepor a imagem*/
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);/*referente a propria imagem*/
+    height: 18%;
+}
+.pokemondata{
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 54.5%;
+    right: 27%;
+    font-size: clamp(8px, 5vw, 25px);
+}  
+
+.pokemonname{
+    color: rgb(66, 65, 65);
+    text-transform: capitalize;
+
+}
+
+.form{
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+}
+#inputsearch{
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600; 
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -2px 3px 0 #888, -4px 5px 0 black;
+}
+.buttons{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+.button{
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 black;
+}
+.button:active{    /*pseudo classe para o botão*/
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+.info{
+    border: solid 1px black;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    background-color: rgb(235, 223, 223);
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: 2px 2px 0 rgba(128, 128, 128, 0.568);
+}
+.popup{
+    position: absolute;
+    bottom: 60%;
+    left: 100%;
+    width: 60%;
+    transform: translate(-57%, 0);
+    border: solid 2px black;
+    background-color: white;
+    box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.397);
+    height: 20%;
+    border-radius: 10px;
+    display: none;
+    text-transform: capitalize;
+}
